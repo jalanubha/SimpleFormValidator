@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Validation demo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/validator.js"></script>
+</head>
+<body>
+<form class="forms" id="frmFeedback" action="cms/feedback.php" method="post">
+			        <p><input required placeholder="Full Name" type="text" name="fname" id="fname"><span class="error" id="errName"></span></p>
+			        <p><input required placeholder="Email ID" type="email" name="email" id="email"><span class="error" id="errEmail"></span></p>
+			        <p><input required placeholder="+country code - area - phone" type="text" name="phone" id="phone"><span class="error" id="errPhone"></span></p>
+			        <p>
+			        	<select required name="country" id="country">
+			        		<option value="" disabled="disabled" selected="selected">Country</option>
+						    <option value="India">India</option>
+						    <option value="Australia">Australia</option>
+			        	</select>
+			        	<select required name="state" id="state">
+			        		<option value="" disabled="disabled" selected="selected">State</option>
+			        	</select>
+			        	<select required name="city" id="city">
+			        		<option value="" disabled="disabled" selected="selected">City</option>
+			        	</select>
+			        	<span class="error" id="errPlace"></span>
+			        </p>
+			        <p><textarea required placeholder="Feedback" name="feedb" id="feedb" rows="10" cols="50" tabindex="20"></textarea><span class="error" id="errText"></span></p>
+			        <p>
+			        	<input type="submit" id="btnSubmit" value="Submit"/>
+			        	<input type="reset" id="btnReset" value="Reset" />			        	
+			        </p>
+		        </form>
+</body>
+<script type="text/javascript" src="js/validate.js"></script>
+<script type="text/javascript" src="js/selectFiller.js"></script>
+</html>
