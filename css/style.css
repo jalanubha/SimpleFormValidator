@@ -1,0 +1,51 @@
+.forms p {
+	margin: 10px;
+}
+
+.forms label {
+
+}
+
+.forms input {
+	padding: 4px;
+	min-width: 195px;
+}
+
+.forms input[type="submit"], .forms input[type="reset"] {
+	min-width: 100px;
+	height: 30px;
+	margin-top: 10px;
+	background-color: #365962;
+	border: none;
+	color: white;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+
+.forms input[type="submit"]:hover, .forms input[type="reset"]:hover {
+	background-color: #473F47;
+}
+
+.forms select {
+	min-width: 100px;
+	padding: 4px;
+}
+
+.forms textarea {
+	font-family:Segoe UI, Tahoma, Geneva, sans-serif;
+	padding: 4px;
+}
+
+.placehold {
+	color: gray;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+	background-color: #FFF6E5;
+}
+
+.validator_valid:after{
+	content: url(../images/tick.png);
+}
